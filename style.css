@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    box-sizing: content-box;
+    padding: 0;
+  }
+  
+  .media {
+    display: flex;
+    justify-content: right;
+    background-color: rgb(62, 62, 66);
+    gap: 1em;
+    padding-right: 10px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+  }
+ .links {
+  width: 20px;
+ }

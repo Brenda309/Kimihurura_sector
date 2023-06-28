@@ -10,6 +10,7 @@
     background-color: rgb(62, 62, 66);
     gap: 1em;
     padding-right: 10px;
+    border: 2px solid wheat;
   }
 
   .link {
@@ -19,3 +20,52 @@
  .links {
   width: 20px;
  }
+ .nav-menu {
+  display: flex;
+  list-style: none;
+  background: white;
+  justify-content: space-between;
+  margin-left: 0;
+}
+
+.nav-menu img {
+  width: 200px;
+  height: 40px;
+  margin: 10px 10px;
+}
+li {
+  list-style: none;
+}
+
+.menu-items{
+  display: flex;
+  gap: 1em;
+  padding-top: 20px;
+  margin-right: 10px;
+}
+.menu-items  a{
+ text-decoration: none;
+ /* color: black;  */
+}
+.menu-items li:hover {
+ color:orangered;
+ font: size 20px;
+ font-weight: bold;
+ border: 1px orange solid;
+  
+}
+.menu-items .fa {
+  margin: 8px;
+}
+.sub-menu{
+  display: none;
+}
+.menu-items li:hover .sub-menu{
+  display: block;
+  position: absolute;
+  margin-top: 15px;
+  /* margin-left: -15px; */
+}
+.menu-items li:hover .sub-menu a{
+ color:black
+}

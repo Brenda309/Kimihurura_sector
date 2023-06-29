@@ -1,71 +1,123 @@
 * {
-    margin: 0;
-    box-sizing: content-box;
-    padding: 0;
-  }
-  
-  .media {
-    display: flex;
-    justify-content: right;
-    background-color: rgb(62, 62, 66);
-    gap: 1em;
-    padding-right: 10px;
-    border: 2px solid wheat;
-  }
+  margin: 0;
+  box-sizing: content-box;
+  padding: 0;
+}
 
-  .link {
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-  }
- .links {
-  width: 20px;
- }
- .nav-menu {
+.media {
   display: flex;
-  list-style: none;
-  background: white;
-  justify-content: space-between;
-  margin-left: 0;
+  justify-content: right;
+  background-color: rgb(62, 62, 66);
+  gap: 1em;
+  padding-right: 10px;
+  border: 2px solid wheat;
+}
+
+.link {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+.links {
+width: 20px;
+}
+.nav-menu {
+display: flex;
+list-style: none;
+background: white;
+justify-content: space-between;
+margin-left: 0;
 }
 
 .nav-menu img {
-  width: 200px;
-  height: 40px;
-  margin: 10px 10px;
+width: 200px;
+height: 40px;
+margin: 10px 10px;
 }
 li {
-  list-style: none;
+list-style: none;
 }
 
 .menu-items{
-  display: flex;
-  gap: 1em;
-  padding-top: 20px;
-  margin-right: 10px;
+display: flex;
+gap: 3em;
+padding-top: 20px;
+margin-right: 10px;
 }
 .menu-items  a{
- text-decoration: none;
- /* color: black;  */
+text-decoration: none;
+/* color: black;  */
 }
 .menu-items li:hover {
- color:orangered;
- font: size 20px;
- font-weight: bold;
- border: 1px orange solid;
-  
+color:orangered;
+font: size 20px;
+font-weight: bold;
+border: 4px orange solid;
+
+
 }
 .menu-items .fa {
-  margin: 8px;
+margin: 4px;
 }
 .sub-menu{
-  display: none;
+display: none;
+position: absolute;
+/* background-color: red; */
+width: 100%;
+z-index: 1;
 }
 .menu-items li:hover .sub-menu{
-  display: block;
-  position: absolute;
-  margin-top: 15px;
-  /* margin-left: -15px; */
+display: flex;
+/* position: absolute; */
+margin-top: 15px;
+
+
+
 }
 .menu-items li:hover .sub-menu a{
- color:black
+color:black;
+/* opacity: 1; */
+}
+.home-page{
+  background-image: url(../images/convention.jpeg);
+}
+.home{
+  background: whitesmoke;
+  opacity:0.8;
+}
+
+h1 {
+  color:#eb4a10;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 100px;
+  font-family: 'Lato', sans-serif;
+}
+
+.disc {
+  border: 1px solid whitesmoke;
+  margin-left: 20px;
+  padding: 8px;
+  margin-right: 20px;
+  text-align: center;
+  background: white;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+}
+
+.time p {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+footer{
+  background: rgb(31, 31, 61);
+  text-align: center;
+  color: aliceblue;
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
 }
